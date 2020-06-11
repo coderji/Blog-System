@@ -251,7 +251,7 @@
 
     </style>
 </head>
-<body background="/img/bg.png" >
+<body>
 
 <div>
     <header id="header">
@@ -259,7 +259,6 @@
             <ul>
                 <li>
                     <a href="/">首页</a>
-                    <a href="/about">关于</a>
                 </li>
             </ul>
             <div class="my-info" onmouseover="hiddeewm()" onmouseout="hiddeewm()">
@@ -272,13 +271,7 @@
             </div>
         </nav>
     </header>
-    <div id="bg" >
-        <p>
-            和所有以梦为马的诗人一样
-            <br>
-            <i>岁月易逝 一滴不剩</i>
-        </p>
-    </div>
+
     <div id="container">
 <article class="article">
             <time id="time1">${article.localTime}</time>
@@ -392,14 +385,6 @@
         </c:if>
     </div>
     </div>
-
-    <footer id="footer">
-        <section id="copyright">
-            <p style="font-size: 20px">
-                © 2018 <a href="/">星·光</a>
-            </p>
-        </section>
-    </footer>
 
 </div>
 </div>

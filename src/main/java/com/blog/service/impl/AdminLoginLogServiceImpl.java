@@ -9,10 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AdminLoginLogServiceImpl implements AdminLoginLogService{
+public class AdminLoginLogServiceImpl implements AdminLoginLogService {
 
     @Autowired
     public AdminLoginLogDao adminLoginLogDao;
+
     public List<AdminLoginLog> selectRencent(Integer adminId) {
         return adminLoginLogDao.selectRencent(adminId);
     }

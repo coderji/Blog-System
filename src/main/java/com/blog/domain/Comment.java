@@ -36,7 +36,6 @@ public class Comment {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");//设置日期格式
         String dates = df.format(date);
         return dates;
-
     }
 
     public void setDate(Date date) {

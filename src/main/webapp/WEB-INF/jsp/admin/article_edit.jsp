@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -6,13 +5,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/bootstrap4.0.min.css" >
-    <script src="/js/jquery.slim.min.js" ></script>
-    <script src="/js/popper.min.js" ></script>
+    <link rel="stylesheet" href="/css/bootstrap4.0.min.css">
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap4.0.min.js"></script>
     <script type="text/javascript" src="/js/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" src="/js/ueditor/ueditor.all.js"> </script>
-    <script type="text/javascript"  src="/js/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="/js/ueditor/ueditor.all.js"></script>
+    <script type="text/javascript" src="/js/lang/zh-cn/zh-cn.js"></script>
 </head>
 <body>
 <div style="position: relative;top: 10%">
@@ -43,7 +42,8 @@
         </div>
         <div class="form-group">
             <label for="keywords">关键字</label>
-            <input type="text" class="form-control" id="keywords" name="keywords" placeholder="关键字" value="${article.keywords}">
+            <input type="text" class="form-control" id="keywords" name="keywords" placeholder="关键字"
+                   value="${article.keywords}">
         </div>
         <div class="form-group">
             <label for="desci">简介</label>
@@ -54,20 +54,20 @@
         </div>
         <div class="form-group">
             <label for="editor">内容</label>
-            <script id="editor" type="text/plain"  name="content" style="width:1024px;height:500px;" >
-            </script>
-            </div>
-            <input type="submit" />
-                </form>
-
-                <script>
-                $(function(){
-                    var ue = UE.getEditor('editor');
-                    ue.ready(function() {
-                        ue.setContent($("#cont").html());
-                    });
-                });
+            <script id="editor" type="text/plain" name="content" style="width:1024px;height:500px;">
             </script>
         </div>
+        <input type="submit"/>
+    </form>
+
+    <script>
+        $(function () {
+            var ue = UE.getEditor('editor');
+            ue.ready(function () {
+                ue.setContent($("#cont").html());
+            });
+        });
+    </script>
+</div>
 </body>
 </html>

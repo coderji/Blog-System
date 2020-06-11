@@ -24,4 +24,4 @@ public interface AdminLoginLogDao {
     List<AdminLoginLog> selectRencent(Integer adminId);
 
     int selectCountByAdminId(Integer adminId);
-    }
+}

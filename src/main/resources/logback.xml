@@ -7,6 +7,6 @@
     </appender>
     <!--开启debug日志模式，在控制台打印日志-->
     <root level="debug">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT"/>
     </root>
 </configuration>

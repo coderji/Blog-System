@@ -6,11 +6,10 @@ import com.blog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ArticleServiceImpl implements ArticleService{
+public class ArticleServiceImpl implements ArticleService {
 
     @Autowired
     public ArticleDao articleDao;
@@ -28,7 +27,7 @@ public class ArticleServiceImpl implements ArticleService{
     }
 
     public boolean updateArticle(Article article) {
-        return articleDao.updateByPrimaryKeySelective(article)>0;
+        return articleDao.updateByPrimaryKeySelective(article) > 0;
     }
 
     public int deleteById(Integer id) {
@@ -44,7 +43,7 @@ public class ArticleServiceImpl implements ArticleService{
     }
 
     public boolean insert(Article article) {
-        return articleDao.insert(article)>0;
+        return articleDao.insert(article) > 0;
     }
 
     public Article selectLastArticle(Integer id) {

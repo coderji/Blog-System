@@ -1,7 +1,6 @@
 package com.blog.dao;
 
 import com.blog.domain.Article;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -27,7 +26,6 @@ public interface ArticleDao {
     int updateByPrimaryKey(Article record);
 
     int countAllNum();
-
 
     List<Article> queryAll();
 

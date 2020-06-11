@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -7,15 +6,16 @@
 <head>
     <meta charset="UTF-8">
     <title>博客管理系统</title>
-    <link rel="stylesheet" href="/css/bootstrap4.0.min.css" >
-    <script src="/js/jquery.slim.min.js" ></script>
-    <script src="/js/popper.min.js" ></script>
+    <link rel="stylesheet" href="/css/bootstrap4.0.min.css">
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap4.0.min.js"></script>
     <script src="/js/layer.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand text-success" href="/admin/main">博客管理</a>
@@ -25,11 +25,13 @@
             <li class="nav-item">
                 <!-- Example single danger button -->
                 <div class="btn-group">
-                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                         新建
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="javascript:void(0);" onclick="fullScreen('添加文章','/admin/article/add')">文章</a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                           onclick="fullScreen('添加文章','/admin/article/add')">文章</a>
                         <!-- <a class="dropdown-item" href="#">评论</a> -->
                     </div>
                 </div>
@@ -52,10 +54,6 @@
     </div>
 </nav>
 <div class="card mb-3">
-    <div style="height: 180px;overflow: hidden">
-        <img class="card-img-top" src="/img/82839-106.jpg" alt="Card image cap" style="height: 100%;width:100%;">
-    </div>
-
     <div class="card-body">
         <h4 class="card-title">${admin.username}</h4>
         <p class="card-text"><small class="text-muted">上次登录时间:${loginLog.localTime}</small></p>
@@ -63,11 +61,11 @@
         <p class="card-text"><small class="text-muted">本次登录IP:${clientIp}</small></p>
     </div>
 </div>
-<div >
+<div>
     <table class="table table-hover">
         <p class="text-success" style="text-align: center"> 系统统计</p>
         <thead>
-        <tr >
+        <tr>
             <th>#</th>
             <th>文章数</th>
             <th>评论数</th>
@@ -86,7 +84,7 @@
 </div>
 
 <div style="width: 50%;position: relative;left: 25%">
-    <table class="table table-sm" >
+    <table class="table table-sm">
         <p class="text-success" style="text-align: center"> 系统信息</p>
 
         <tr>
@@ -105,7 +103,7 @@
     </table>
 </div>
 <script>
-    function fullScreen(title,url){
+    function fullScreen(title, url) {
         var index = layer.open({
             type: 2,
             title: title,

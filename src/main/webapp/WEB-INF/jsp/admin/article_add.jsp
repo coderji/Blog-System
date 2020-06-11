@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -6,9 +5,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/bootstrap4.0.min.css" >
-    <script src="/js/jquery.slim.min.js" ></script>
-    <script src="/js/popper.min.js" ></script>
+    <link rel="stylesheet" href="/css/bootstrap4.0.min.css">
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap4.0.min.js"></script>
     <script type="text/javascript" src="/js/wangEditor.min.js"></script>
 </head>
@@ -21,7 +20,7 @@
     </c:if>
     <c:if test="${!empty error}">
         <div class="alert alert-danger" role="alert">
-            ${error}
+                ${error}
         </div>
     </c:if>
 </div>
@@ -36,6 +35,7 @@
             <select class="form-control" id="catalogId" name="catalogId">
                 <option value="0">学习</option>
                 <option value="1">生活</option>
+                <option value="2">工作</option>
             </select>
         </div>
         <div class="form-group">
@@ -52,21 +52,21 @@
             </div>
             <textarea id="content" name="content" style="display: none"></textarea>
         </div>
-        <input type="submit" value="发表" />
+        <input type="submit" value="发表"/>
     </form>
 
-            <script type="text/javascript">
-                var E = window.wangEditor
-                var editor = new E('#div1')
-                var $text1 = $('#content')
-                editor.customConfig.onchange = function (html) {
-                    // 监控变化，同步更新到 textarea
-                    $text1.val(html)
-                }
-                editor.create()
-                // 初始化 textarea 的值
-                $text1.val(editor.txt.html())
-            </script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#div1')
+        var $text1 = $('#content')
+        editor.customConfig.onchange = function (html) {
+            // 监控变化，同步更新到 textarea
+            $text1.val(html)
+        }
+        editor.create()
+        // 初始化 textarea 的值
+        $text1.val(editor.txt.html())
+    </script>
 </div>
 </body>
 </html>

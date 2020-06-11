@@ -78,9 +78,7 @@ public class Article {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-M-dd HH:mm");//设置日期格式
         String date = df.format(time);
         return date;
-
     }
-
 
     public void setTime(Date time) {
         this.time = time;

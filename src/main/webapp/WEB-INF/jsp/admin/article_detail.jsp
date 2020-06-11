@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -6,9 +5,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/bootstrap4.0.min.css" >
-    <script src="/js/jquery.slim.min.js" ></script>
-    <script src="/js/popper.min.js" ></script>
+    <link rel="stylesheet" href="/css/bootstrap4.0.min.css">
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap4.0.min.js"></script>
 </head>
 <body>
@@ -16,7 +15,7 @@
 
     <tr class="table-active">
         <th width="15%">ID</th>
-        <td >${article.id}</td>
+        <td>${article.id}</td>
     </tr>
     <tr class="table-secondary">
         <th>标题</th>

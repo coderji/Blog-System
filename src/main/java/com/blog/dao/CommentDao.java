@@ -1,6 +1,5 @@
 package com.blog.dao;
 
-import com.blog.domain.Article;
 import com.blog.domain.Comment;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -25,5 +24,5 @@ public interface CommentDao {
 
     int countAllNum();
 
-    List<Comment> queryAll(@Param("article_id") int article_id,@Param("offset") int offset, @Param("limit") int limit);
+    List<Comment> queryAll(@Param("article_id") int article_id, @Param("offset") int offset, @Param("limit") int limit);
 }
